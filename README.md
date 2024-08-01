@@ -1,6 +1,6 @@
 # Today I Learned (Practice Project)
 
-This project is done by [Mohammed Faizan Mateen](https://www.linkedin.com/in/mohammed-faizan-mateen) to practice writing React code, and practice using TailwindCSS, and State Management.
+This project is done by [Mohammed Faizan Mateen](https://www.linkedin.com/in/mohammed-faizan-mateen) to practice writing React code, using TailwindCSS for styling, and proper use of state management.
 
 ## Installation
 
