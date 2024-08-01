@@ -1,8 +1,19 @@
-# React + Vite
+# Today I Learned (Practice Project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is done by [Mohammed Faizan Mateen](https://www.linkedin.com/in/mohammed-faizan-mateen) to practice writing React code, and practice using TailwindCSS, and State Management.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Use the npm package manager to install all dependencies.
+
+```
+npm install
+```
+
+## Usage
+
+To run a development environment, run the following command after installing all the packages from the package.json file
+
+```
+npm run dev
+```
