@@ -1,4 +1,5 @@
 import { FaCode, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
+import Container from "./Container";
 
 const socialLinks = [
   {
@@ -20,8 +21,8 @@ const socialLinks = [
 
 function Footer() {
   return (
-    <footer className="max-w-screen border-t-2 border-stone-500 bg-definedColor-base2 pt-2">
-      <div className="mx-auto flex max-w-screen-xl flex-col gap-4 p-2 px-6 font-[Sono] text-definedColor-base md:gap-0">
+    <footer className="border-t-2 border-stone-500 bg-definedColor-base2 pt-2 font-['Sono']">
+      <Container>
         <div className="flex flex-row justify-between gap-4">
           <p className="flex items-center gap-2">
             <span>
@@ -57,7 +58,7 @@ function Footer() {
             </a>
           </span>
         </p>
-      </div>
+      </Container>
     </footer>
   );
 }

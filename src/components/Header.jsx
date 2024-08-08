@@ -1,4 +1,4 @@
-import PostBtn from "../posts/PostBtn";
+import PostBtn from "./PostBtn";
 
 function Header() {
   return (

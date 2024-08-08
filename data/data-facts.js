@@ -168,9 +168,9 @@ export const FACTS = [
     text: "In 2023, the European Union introduced regulations mandating the use of USB-C chargers for all electronic devices.",
     source: "https://www.bbc.com/news/technology-63139899",
     category: "technology",
-    votesFalse: 2,
+    votesFalse: 50,
     votesInteresting: 23,
-    votesMindblowing: 5,
+    votesMindblowing: 2,
   },
   {
     id: 19,

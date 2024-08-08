@@ -1,13 +1,18 @@
-import AppLayout from "./AppLayout";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Container from "./components/Container";
+import Main from "./components/Main";
 
 function App() {
   return (
-    <div className="flex flex-col justify-between gap-6 bg-stone-800 md:h-screen md:gap-4">
-      <AppLayout />
+    <div className="flex flex-col justify-between gap-6 md:h-screen md:gap-4">
+      <Container>
+        <Header />
+        <Main />
+      </Container>
+      <Footer />
     </div>
   );
 }
 
 export default App;
-
-// h-screen w-screen

@@ -1,4 +1,4 @@
-function Button({ children, type, color }) {
+function Button({ children, type, color, onClick }) {
   // const base =
   //   " rounded-full p-3 px-10 z-10 transition-all duration-300 hover:-rotate-3 hover:scale-110";
 
@@ -59,13 +59,17 @@ function Button({ children, type, color }) {
   // return <button className={style[type]}>{children}</button>;
 
   const baseStyles =
-    " w-full rounded-full px-4 py-2 transition-all duration-300 hover:-rotate-3 hover:scale-105";
+    " w-full rounded-full px-4 py-2 transition-all duration-300 hover:-rotate-3 hover:scale-105 ";
 
   if (color) {
     const additionalStyles = color + " " + baseStyles;
-    console.log(additionalStyles);
+    // console.log(additionalStyles);
     // console.log(`${color}`);
-    return <button className={`${additionalStyles}`}>{children}</button>;
+    return (
+      <button onClick={onClick} className={`${additionalStyles}`}>
+        {children}
+      </button>
+    );
   }
 }
 
