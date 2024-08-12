@@ -5,7 +5,7 @@ const socialLinks = [
   {
     id: 1,
     icon: FaEnvelope,
-    linkTo: "https://github.com/FaizanMateen",
+    linkTo: "mailto:faizanmateen20@gmail.com",
   },
   {
     id: 2,

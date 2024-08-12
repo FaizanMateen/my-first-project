@@ -5,7 +5,7 @@ import { getFacts } from "../factsSlice";
 function FactsList() {
   const facts = useSelector(getFacts);
   return (
-    <section className="my-4 h-full w-full px-3 md:w-3/5 md:overflow-y-auto lg:w-3/4">
+    <section className="h-full w-full px-3 md:w-3/5 md:overflow-y-auto lg:w-3/4">
       <ul className="flex flex-col gap-4">
         {facts.map((item) => (
           <FactItem key={item.id} item={item} />

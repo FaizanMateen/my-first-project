@@ -6,7 +6,7 @@ import { filter } from "../factsSlice";
 function CategoryList() {
   const dispatch = useDispatch();
   return (
-    <aside className="my-4 w-full px-4 md:w-2/5 md:overflow-y-auto lg:w-1/4">
+    <aside className="w-full px-4 md:w-2/5 md:overflow-y-auto lg:w-1/4">
       <ul className="flex flex-col gap-4">
         <li>
           <Button>All</Button>
