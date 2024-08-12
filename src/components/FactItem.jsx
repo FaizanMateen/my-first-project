@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import VoteButton from "./VoteButton";
 import { increment } from "../factsSlice";
-import { CATEGORIES } from "../../data/data-categories";
+import { CATEGORIES } from "../data/data-categories";
 
 function FactItem({ item }) {
   const dispatch = useDispatch();
@@ -22,8 +22,8 @@ function FactItem({ item }) {
 
   return (
     <li>
-      <div className="flex flex-row items-end justify-start gap-4 rounded-2xl bg-definedColor-base2 p-3 font-[Sono] text-definedColor-base xl:flex-row xl:items-center">
-        <p className="basis-96 self-start text-xl">
+      <div className="flex flex-col items-end justify-start gap-4 rounded-2xl bg-definedColor-base2 p-3 font-[Sono] text-definedColor-base xl:flex-row xl:items-center">
+        <p className="self-start text-xl md:basis-96">
           {votesTrue < votesFalse && (
             <span className="font-bold text-red-600">⛔[DISPUTED]&nbsp;</span>
           )}
@@ -45,7 +45,7 @@ function FactItem({ item }) {
           {category}
         </span>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 self-center">
           <VoteButton
             emoji="👍"
             votes={votesInteresting}

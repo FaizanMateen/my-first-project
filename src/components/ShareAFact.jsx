@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addItem } from "../factsSlice";
 import Button from "./Button";
-import { CATEGORIES } from "../../data/data-categories";
+import { CATEGORIES } from "../data/data-categories";
 
 function ShareAFact() {
   const dispatch = useDispatch();
@@ -37,22 +37,22 @@ function ShareAFact() {
           placeholder="Share a fact with me.."
           value={newInfo}
           onChange={(e) => setNewInfo(e.target.value)}
-          className="input basis-full rounded-full bg-definedColor-base3 px-4 py-2 md:w-full"
+          className="input flex basis-full flex-col rounded-full bg-definedColor-base3 px-4 py-2 md:w-full"
           // className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
           // class="input"
         />
-        <label className="text-lg font-bold">200</label>
       </div>
+      <label className="ml-2 self-center font-bold">200</label>
       <input
         type="text"
         onChange={(e) => setNewLink(e.target.value)}
         placeholder="Trustworthy source..."
-        className="basis-96 rounded-full bg-definedColor-base3 px-4 py-2"
+        className="rounded-full bg-definedColor-base3 px-4 py-2"
       />
       <select
         defaultValue="Choose Category"
         onChange={(e) => setOptions(e.target.value)}
-        className="basis-60 rounded-full bg-definedColor-base3 px-3 py-2"
+        className="rounded-full bg-definedColor-base3 px-3 py-2"
       >
         <option disabled className="text-definedColor-base1">
           Choose Category

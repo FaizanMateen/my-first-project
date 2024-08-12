@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { CATEGORIES } from "../../data/data-categories";
+import { CATEGORIES } from "../data/data-categories";
 import Button from "./Button";
 import { filter } from "../factsSlice";
 

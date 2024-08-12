@@ -1,4 +1,4 @@
-import { FACTS } from "../data/data-facts";
+import { FACTS } from "./data/data-facts";
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
