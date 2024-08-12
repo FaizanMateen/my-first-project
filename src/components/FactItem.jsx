@@ -40,7 +40,7 @@ function FactItem({ item }) {
         </p>
 
         <span
-          className={`m-auto flex items-center justify-center justify-self-center rounded-full px-4 pt-1 font-["Coiny"] text-sm uppercase ${categoryColor}`}
+          className={`m-auto flex items-center justify-center justify-self-center rounded-full px-4 py-1 font-["Coiny"] text-sm uppercase ${categoryColor}`}
         >
           {category}
         </span>
