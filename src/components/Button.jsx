@@ -3,7 +3,7 @@ function Button({ onClick, children, additionalStyles, color }) {
 
   return (
     <button
-      className={`z-10 w-full rounded-full px-4 py-3 text-center font-semibold uppercase transition-all duration-200 hover:-rotate-3 hover:scale-105 ${additionalStyles ? additionalStyles : ""} ${color ? color : "bg-green-500"}`}
+      className={`z-10 w-full rounded-full px-4 py-3 text-center font-semibold uppercase transition-all duration-200 hover:-rotate-3 hover:scale-105 ${additionalStyles ? additionalStyles : ""} ${color ? color : "gradient-background"}`}
       onClick={onClick}
     >
       {children}

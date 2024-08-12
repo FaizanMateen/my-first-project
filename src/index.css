@@ -124,3 +124,13 @@
     --color-gradient1: #999;
   } */
 }
+
+.gradient-background {
+  background-image: linear-gradient(
+    135deg,
+    var(--color-gradient4),
+    var(--color-gradient2),
+    var(--color-gradient3),
+    var(--color-gradient1)
+  );
+}
