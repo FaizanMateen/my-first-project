@@ -9,7 +9,7 @@ function CategoryList() {
     <aside className="w-full px-4 md:w-2/5 md:overflow-y-auto lg:w-1/4">
       <ul className="flex flex-col gap-4">
         <li>
-          <Button>All</Button>
+          <Button onClick={() => dispatch(filter("all"))}>All</Button>
         </li>
         {CATEGORIES.map((cat) => (
           <li key={cat.name}>

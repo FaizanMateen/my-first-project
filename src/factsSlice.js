@@ -29,9 +29,11 @@ export const factsSlice = createSlice({
       filterdFact[votes]++;
     },
     filter(state, action) {
-      state.filteredFacts = state.facts.filter(
-        (item) => item.category === action.payload,
-      );
+      if (action.payload === "all") state.filteredFacts = state.facts;
+      else
+        state.filteredFacts = state.facts.filter(
+          (item) => item.category === action.payload,
+        );
     },
     addItem(state, action) {
       state.facts.push(action.payload);

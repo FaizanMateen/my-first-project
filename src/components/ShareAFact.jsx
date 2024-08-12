@@ -12,6 +12,7 @@ function ShareAFact() {
 
   function handleSubmit(e) {
     e.preventDefault();
+
     const newData = {
       id: Math.random(),
       text: newInfo,
@@ -26,6 +27,10 @@ function ShareAFact() {
     setNewLink("");
     setOptions("");
   }
+
+  const remainingCharacters = 200 - newInfo.length;
+  // console.log(remainingCharacters);
+
   return (
     <form
       onSubmit={handleSubmit}
@@ -42,7 +47,7 @@ function ShareAFact() {
           // class="input"
         />
       </div>
-      <label className="ml-2 self-center font-bold">200</label>
+      <span className="ml-2 self-center font-bold">{remainingCharacters}</span>
       <input
         type="text"
         onChange={(e) => setNewLink(e.target.value)}
