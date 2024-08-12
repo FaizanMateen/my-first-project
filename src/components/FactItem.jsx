@@ -49,17 +49,21 @@ function FactItem({ item }) {
           <VoteButton
             emoji="👍"
             votes={votesInteresting}
-            onClick={() => dispatch(increment(id))}
+            onClick={() =>
+              dispatch(increment({ id, votes: "votesInteresting" }))
+            }
           />
           <VoteButton
             emoji="🤯"
             votes={votesMindblowing}
-            onClick={() => dispatch(increment(id))}
+            onClick={() =>
+              dispatch(increment({ id, votes: "votesMindblowing" }))
+            }
           />
           <VoteButton
             emoji="⛔"
             votes={votesFalse}
-            onClick={() => dispatch(increment(id))}
+            onClick={() => dispatch(increment({ id, votes: "votesFalse" }))}
           />
         </div>
       </div>
